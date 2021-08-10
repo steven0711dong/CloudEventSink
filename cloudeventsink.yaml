@@ -1,0 +1,9 @@
+apiVersion: serving.knative.dev/v1
+kind: Service
+metadata:
+  name: cloudeventsink
+spec:
+  template:
+    spec:
+      containers:
+        - image: ko://github.com/steven0711dong/CloudEventSink
